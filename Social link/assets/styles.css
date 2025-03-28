@@ -1,0 +1,90 @@
+/* 1st Working */
+@font-face {
+    font-family:Inter ;
+    src: url('fonts/Inter-VariableFont_slnt\,wght.ttf');
+
+}
+:root{
+/* Colors */
+/* Primary */
+--green: hsl(226, 40%, 55%);
+/* Neutral */
+--white: hsl(0, 0%, 100%);
+--grey: hsl(0, 0%, 20%);
+--darkGrey: hsl(0, 0%, 12%);
+--offBlack: hsl(0, 0%, 8%);
+
+/* Typography */
+--fs-p:0.875rem;
+--fs-h-s:0.75rem;
+}
+
+
+*,::before,::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+body{
+    display: flex;
+    position: relative;
+    min-height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: var(--fs-p);
+    background-color: var(--offBlack);
+    color: var(--white);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    align-items: center;
+    max-width: 20rem;
+    background-color: var(--darkGrey);
+    padding: 2rem;
+    border-radius: 0.625rem;
+    
+}
+main a{
+    text-align: center;
+    padding: 0.625rem;
+    width: 100%;
+    font-weight: 600;
+    color: inherit;
+    background-color: var(--grey);
+    text-decoration: none;
+}
+
+
+main p{
+    color: var(--green);
+    margin-bottom: 1.25rem;
+}
+blockquote{
+    margin-bottom: 0.625rem;
+}
+
+img{
+    border-radius: 1.25rem;
+}
+a:hover, a:focus{
+    background-color: var(--green);
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    font-size: 0.6875rem;
+    text-align: center;
+                      
+}
+footer a{
+    color: hsl(201, 86%, 49%);
+}
